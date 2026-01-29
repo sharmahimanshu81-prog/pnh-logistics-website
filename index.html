@@ -2,160 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PNH Logistics Pvt Ltd | Global Freight. Local Expertise.</title>
+  <title>PNH Logistics Pvt Ltd | International Logistics, Made Simple</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="PNH Logistics Pvt Ltd – Air, Sea, Road Freight, Customs Clearance, Warehousing & Project Cargo Solutions." />
 
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f4c75, #1abc9c);
-      color: #ffffff;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #222;
+      line-height: 1.6;
     }
 
+    /* ===== HEADER ===== */
     header {
-      padding: 60px 20px;
-      text-align: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      color: #fff;
     }
 
     header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 22px;
+      letter-spacing: 1px;
     }
 
-    header p {
-      font-size: 18px;
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1578575437130-527eed3abbec") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 60px;
+      color: #fff;
+    }
+
+    .hero-content {
+      max-width: 700px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .hero h2 {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 35px;
       opacity: 0.95;
     }
 
+    .hero .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background: linear-gradient(135deg, #0f4c75, #1abc9c);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+      margin-right: 15px;
+    }
+
+    .hero .btn.secondary {
+      background: transparent;
+      border: 2px solid #fff;
+    }
+
+    /* ===== SECTIONS ===== */
     section {
-      background: #ffffff;
-      color: #333;
-      padding: 50px 20px;
+      padding: 80px 60px;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
     }
 
-    h2 {
+    .section-title {
       text-align: center;
-      color: #0f4c75;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
 
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #f5f7fa;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card h3 {
-      color: #1abc9c;
+    .section-title h3 {
+      font-size: 36px;
       margin-bottom: 10px;
     }
 
-    .contact {
-      background: #0f4c75;
-      color: white;
+    .section-title p {
+      color: #666;
+      font-size: 18px;
+    }
+
+    /* ===== SERVICES ===== */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 35px 25px;
       text-align: center;
-      padding: 50px 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
     }
 
-    .contact p {
-      margin: 8px 0;
-      font-size: 16px;
+    .service-box:hover {
+      transform: translateY(-8px);
     }
 
+    .service-box span {
+      font-size: 42px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .service-box h4 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== ABOUT ===== */
+    .about {
+      background: linear-gradient(135deg, #0f4c75, #1abc9c);
+      color: #fff;
+    }
+
+    .about p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* ===== FOOTER ===== */
     footer {
-      text-align: center;
-      padding: 15px;
-      background: #0b3c5d;
-      font-size: 14px;
+      background: #0b2239;
+      color: #fff;
+      padding: 50px 60px;
     }
 
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      padding: 14px 18px;
-      border-radius: 50px;
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    footer h4 {
+      margin-bottom: 15px;
+    }
+
+    footer p, footer a {
+      font-size: 15px;
+      color: #ddd;
       text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
-  </style>
-</head>
 
-<body>
-
-<header>
-  <h1>PNH Logistics Pvt Ltd</h1>
-  <p>Global Freight. Local Expertise.</p>
-</header>
-
-<section>
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>✈️ Air Freight</h3>
-        <p>Fast, reliable international and domestic air cargo solutions.</p>
-      </div>
-      <div class="card">
-        <h3>🚢 Sea Freight</h3>
-        <p>FCL & LCL ocean freight with global network coverage.</p>
-      </div>
-      <div class="card">
-        <h3>🚛 Road Transport</h3>
-        <p>Safe and timely surface transportation across India.</p>
-      </div>
-      <div class="card">
-        <h3>🧾 Customs Clearance</h3>
-        <p>Expert handling of import & export customs documentation.</p>
-      </div>
-      <div class="card">
-        <h3>📦 Warehousing</h3>
-        <p>Secure storage and distribution solutions.</p>
-      </div>
-      <div class="card">
-        <h3>🏗️ Project Cargo / ODC</h3>
-        <p>Heavy lift, over-dimensional and project cargo specialists.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="contact">
-  <h2 style="color:#ffffff;">Contact Us</h2>
-  <p>📧 info@pnhlogistics.in | pnhlogisticspvt@gmail.com</p>
-  <p>📞 +91 9266627816</p>
-  <p>📍 Sg Alpha Tower 1, Sector 9, Vasundhra, Ghaziabad</p>
-</div>
-
-<footer>
-  © 2026 PNH Logistics Pvt Ltd. All Rights Reserved.
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919266627816" target="_blank">
-  WhatsApp Us
-</a>
-
-</body>
-</html>
+    /* ===== ANIMATION ===== */
+    @keyframes fade
