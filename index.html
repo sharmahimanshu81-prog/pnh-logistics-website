@@ -1,180 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>PNH Logistics Pvt Ltd | International Logistics, Made Simple</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PNH Logistics Pvt Ltd – Air, Sea, Road Freight, Customs Clearance, Warehousing & Project Cargo Solutions." />
+<meta charset="UTF-8">
+<title>PNH Logistics Pvt Ltd | International Logistics, Made Simple</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PNH Logistics Pvt Ltd – Air, Sea, Road Freight, Customs Clearance, Warehousing & Project Cargo Specialists.">
 
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+<style>
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;color:#222}
+a{text-decoration:none}
 
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: #222;
-      line-height: 1.6;
-    }
+/* HEADER */
+header{
+position:absolute;top:0;width:100%;padding:20px 60px;
+display:flex;justify-content:space-between;align-items:center;
+color:#fff;z-index:10
+}
+header strong{font-size:22px;letter-spacing:1px}
+nav a{color:#fff;margin-left:25px;font-weight:500}
 
-    /* ===== HEADER ===== */
-    header {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      padding: 20px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 10;
-      color: #fff;
-    }
+/* HERO */
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1578575437130-527eed3abbec") center/cover no-repeat;
+display:flex;align-items:center;padding:0 60px;color:#fff
+}
+.hero-content{max-width:720px}
+.hero h1{font-size:56px;margin-bottom:20px}
+.hero p{font-size:20px;margin-bottom:35px}
+.btn{
+display:inline-block;padding:14px 30px;
+background:linear-gradient(135deg,#0ea5a4,#2563eb);
+color:#fff;font-weight:600;border-radius:4px;margin-right:15px
+}
+.btn.alt{background:#25d366}
 
-    header h1 {
-      font-size: 22px;
-      letter-spacing: 1px;
-    }
+/* CAROUSEL */
+.carousel{background:#f8fafc;padding:70px 60px;text-align:center}
+.slide{display:none;font-size:28px;font-weight:600;color:#0f4c75}
+.slide.active{display:block}
 
-    header nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: 500;
-    }
+/* SERVICES */
+section{padding:80px 60px}
+h2{text-align:center;font-size:38px;margin-bottom:50px}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px
+}
+.card{
+background:#fff;border-radius:12px;padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+transition:.3s
+}
+.card:hover{transform:translateY(-8px)}
+.card h3{margin-bottom:10px;color:#0ea5a4}
 
-    /* ===== HERO ===== */
-    .hero {
-      height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-        url("https://images.unsplash.com/photo-1578575437130-527eed3abbec") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      padding: 0 60px;
-      color: #fff;
-    }
+/* ABOUT */
+.about{
+background:linear-gradient(135deg,#2563eb,#0ea5a4);
+color:#fff;text-align:center
+}
+.about p{max-width:900px;margin:auto;font-size:18px}
 
-    .hero-content {
-      max-width: 700px;
-      animation: fadeUp 1.2s ease;
-    }
+/* CONTACT */
+.contact{background:#f8fafc}
+.contact p{text-align:center;font-size:18px}
 
-    .hero h2 {
-      font-size: 56px;
-      margin-bottom: 20px;
-    }
+/* FOOTER */
+footer{
+background:#0b2239;color:#ddd;
+padding:30px;text-align:center
+}
 
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 35px;
-      opacity: 0.95;
-    }
+/* WHATSAPP */
+.whatsapp{
+position:fixed;right:20px;bottom:20px;
+background:#25d366;color:#fff;
+padding:16px 20px;border-radius:50px;
+font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,.3)
+}
+</style>
+</head>
 
-    .hero .btn {
-      display: inline-block;
-      padding: 14px 30px;
-      background: linear-gradient(135deg, #0f4c75, #1abc9c);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 4px;
-      margin-right: 15px;
-    }
+<body>
 
-    .hero .btn.secondary {
-      background: transparent;
-      border: 2px solid #fff;
-    }
+<header>
+<strong>PNH LOGISTICS</strong>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+</header>
 
-    /* ===== SECTIONS ===== */
-    section {
-      padding: 80px 60px;
-    }
+<div class="hero">
+<div class="hero-content">
+<h1>International Logistics, Made Simple.</h1>
+<p>Global freight forwarding, customs clearance and supply chain solutions with local expertise.</p>
+<a href="#contact" class="btn">Get Started</a>
+<a href="https://wa.me/919266627816" class="btn alt">WhatsApp Us</a>
+</div>
+</div>
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
+<div class="carousel">
+<div class="slide active">Air, Sea & Road Freight Solutions</div>
+<div class="slide">Customs Clearance & Compliance Experts</div>
+<div class="slide">Warehousing & Project Cargo Specialists</div>
+</div>
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 60px;
-    }
+<section>
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>✈️ Air Freight</h3><p>Fast global air cargo solutions.</p></div>
+<div class="card"><h3>🚢 Sea Freight</h3><p>Reliable FCL & LCL ocean freight.</p></div>
+<div class="card"><h3>🚛 Road Transport</h3><p>Domestic transport across India.</p></div>
+<div class="card"><h3>🧾 Customs Clearance</h3><p>Import & export documentation experts.</p></div>
+<div class="card"><h3>📦 Warehousing</h3><p>Secure storage & distribution.</p></div>
+<div class="card"><h3>🏗️ Project Cargo</h3><p>ODC & heavy cargo handling.</p></div>
+</div>
+</section>
 
-    .section-title h3 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
+<section class="about">
+<h2>Why PNH Logistics</h2>
+<p>
+With a strong global network and deep local expertise, PNH Logistics Pvt Ltd delivers
+secure, cost-effective and timely logistics solutions for businesses worldwide.
+</p>
+</section>
 
-    .section-title p {
-      color: #666;
-      font-size: 18px;
-    }
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>📧 info@pnhlogistics.in | pnhlogisticspvt@gmail.com</p>
+<p>📞 +91 9266627816</p>
+<p>📍 SG Alpha Tower 1, Sector 9, Vasundhara, Ghaziabad</p>
+</section>
 
-    /* ===== SERVICES ===== */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
+<footer>
+© 2026 PNH Logistics Pvt Ltd. All Rights Reserved.
+</footer>
 
-    .service-box {
-      background: #fff;
-      border-radius: 10px;
-      padding: 35px 25px;
-      text-align: center;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-      transition: transform 0.3s ease;
-    }
+<a class="whatsapp" href="https://wa.me/919266627816" target="_blank">WhatsApp</a>
 
-    .service-box:hover {
-      transform: translateY(-8px);
-    }
+<script>
+let slides=document.querySelectorAll('.slide'),i=0;
+setInterval(()=>{slides[i].classList.remove('active');
+i=(i+1)%slides.length;
+slides[i].classList.add('active');},3000);
+</script>
 
-    .service-box span {
-      font-size: 42px;
-      display: block;
-      margin-bottom: 15px;
-    }
-
-    .service-box h4 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    /* ===== ABOUT ===== */
-    .about {
-      background: linear-gradient(135deg, #0f4c75, #1abc9c);
-      color: #fff;
-    }
-
-    .about p {
-      max-width: 900px;
-      margin: auto;
-      font-size: 18px;
-      text-align: center;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: #0b2239;
-      color: #fff;
-      padding: 50px 60px;
-    }
-
-    footer .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-
-    footer h4 {
-      margin-bottom: 15px;
-    }
-
-    footer p, footer a {
-      font-size: 15px;
-      color: #ddd;
-      text-decoration: none;
-    }
-
-    /* ===== ANIMATION ===== */
-    @keyframes fade
+</body>
+</html>
