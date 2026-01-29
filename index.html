@@ -9,7 +9,6 @@
 <meta name="description" content="PNH Logistics Pvt Ltd – Air, Sea, Road Freight, Customs Clearance, Warehousing & Project Cargo services in India and worldwide.">
 <meta name="keywords" content="freight forwarder India, logistics company Ghaziabad, air freight India, sea freight forwarder, customs clearance agent, warehousing services, project cargo ODC">
 
-<!-- Favicon (upload later if needed) -->
 <link rel="icon" href="assets/favicon.ico">
 
 <!-- Google Analytics (replace ID later) -->
@@ -23,16 +22,11 @@ gtag('config', 'G-XXXXXXXXXX');
 
 <style>
 :root{
---bg:#ffffff;
---text:#222;
---card:#ffffff;
---primary:#2563eb;
---secondary:#0ea5a4;
+--bg:#ffffff;--text:#222;--card:#ffffff;
+--primary:#2563eb;--secondary:#0ea5a4;
 }
 body.dark{
---bg:#0b1220;
---text:#e5e7eb;
---card:#111827;
+--bg:#0b1220;--text:#e5e7eb;--card:#111827;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);transition:.3s}
@@ -43,34 +37,21 @@ header{
 position:fixed;top:0;width:100%;
 padding:15px 40px;
 display:flex;justify-content:space-between;align-items:center;
-background:rgba(0,0,0,.6);
-color:#fff;z-index:1000
+background:rgba(0,0,0,.6);color:#fff;z-index:1000
 }
 header img{height:45px}
 nav a{color:#fff;margin-left:20px;font-weight:500}
 .toggle{cursor:pointer;border:1px solid #fff;padding:5px 12px;border-radius:20px;font-size:13px}
 
-/* HERO SLIDER */
+/* HERO */
 .hero{height:100vh;position:relative;overflow:hidden}
-.slide-img{
-position:absolute;inset:0;
-background-size:cover;background-position:center;
-opacity:0;transition:1s
-}
+.slide-img{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:1s}
 .slide-img.active{opacity:1}
 .overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
-.hero-content{
-position:relative;z-index:2;
-height:100%;display:flex;align-items:center;
-padding:0 50px;color:#fff;max-width:750px
-}
+.hero-content{position:relative;z-index:2;height:100%;display:flex;align-items:center;padding:0 50px;color:#fff;max-width:750px}
 .hero h1{font-size:56px;margin-bottom:20px}
 .hero p{font-size:20px;margin-bottom:30px}
-.btn{
-display:inline-block;padding:14px 30px;
-background:linear-gradient(135deg,var(--secondary),var(--primary));
-color:#fff;font-weight:600;border-radius:4px;margin-right:15px
-}
+.btn{display:inline-block;padding:14px 30px;background:linear-gradient(135deg,var(--secondary),var(--primary));color:#fff;font-weight:600;border-radius:4px;margin-right:15px}
 .btn.alt{background:#25d366}
 
 /* SECTIONS */
@@ -78,17 +59,8 @@ section{padding:90px 50px}
 h2{text-align:center;font-size:38px;margin-bottom:50px}
 
 /* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px
-}
-.card{
-background:var(--card);
-padding:35px;border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,.08);
-transition:.3s
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+.card{background:var(--card);padding:35px;border-radius:12px;box-shadow:0 15px 40px rgba(0,0,0,.08);transition:.3s}
 .card:hover{transform:translateY(-8px)}
 .card h3{color:var(--secondary);margin-bottom:10px}
 
@@ -97,10 +69,7 @@ transition:.3s
 .counter{font-size:42px;color:var(--primary);font-weight:700}
 
 /* ABOUT */
-.about{
-background:linear-gradient(135deg,var(--primary),var(--secondary));
-color:#fff;text-align:center
-}
+.about{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;text-align:center}
 .about p{max-width:900px;margin:auto;font-size:18px}
 
 /* REVEAL */
@@ -108,10 +77,7 @@ color:#fff;text-align:center
 .reveal.active{opacity:1;transform:none}
 
 /* FOOTER */
-footer{
-background:#0b2239;color:#ddd;
-padding:30px;text-align:center
-}
+footer{background:#0b2239;color:#ddd;padding:30px;text-align:center}
 
 /* WHATSAPP */
 .whatsapp{
@@ -120,6 +86,7 @@ background:#25d366;color:#fff;
 padding:16px 20px;border-radius:50px;
 font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,.3)
 }
+input,textarea,button{width:100%;padding:12px;margin-bottom:12px;border-radius:6px;border:1px solid #ccc}
 </style>
 </head>
 
@@ -128,15 +95,16 @@ font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,.3)
 <header>
 <img src="assets/logo-white.png" alt="PNH Logistics">
 <nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#industries">Industries</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="industries.html">Industries</a>
 <a href="#contact">Contact</a>
 <span class="toggle" onclick="toggleDark()">🌙 Dark</span>
 </nav>
 </header>
 
-<div class="hero" id="home">
+<div class="hero">
 <div class="slide-img active" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d')"></div>
 <div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7')"></div>
 <div class="slide-img" style="background-image:url('https://images.unsplash.com/photo-1578575437130-527eed3abbec')"></div>
@@ -162,89 +130,41 @@ font-weight:600;box-shadow:0 8px 20px rgba(0,0,0,.3)
 </div>
 </section>
 
-<section id="services" class="reveal">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card"><h3>✈️ Air Freight</h3><p>Fast & reliable global air cargo.</p></div>
-<div class="card"><h3>🚢 Sea Freight</h3><p>FCL & LCL worldwide ocean freight.</p></div>
-<div class="card"><h3>🚛 Road Transport</h3><p>Pan-India domestic transport.</p></div>
-<div class="card"><h3>🧾 Customs Clearance</h3><p>Import & export compliance experts.</p></div>
-<div class="card"><h3>📦 Warehousing</h3><p>Secure storage & distribution.</p></div>
-<div class="card"><h3>🏗️ Project Cargo</h3><p>ODC & heavy lift logistics.</p></div>
-</div>
-</section>
-
-<section id="industries" class="about reveal">
-<h2>Industries We Serve</h2>
-<p>Manufacturing • Pharma • Automotive • FMCG • Engineering • Project Cargo</p>
-</section>
-
-<section class="reveal">
-<h2>What Clients Say</h2>
-<div class="grid">
-<div class="card">⭐⭐⭐⭐⭐<br><b>Manufacturing Client</b><p>Excellent coordination and timely delivery.</p></div>
-<div class="card">⭐⭐⭐⭐⭐<br><b>Pharma Company</b><p>Professional customs and reliable handling.</p></div>
-<div class="card">⭐⭐⭐⭐⭐<br><b>Export House</b><p>Very transparent and responsive team.</p></div>
-</div>
-</section>
-
 <section id="contact" class="reveal">
 <h2>Contact Us</h2>
 
 <form action="https://formsubmit.co/info@pnhlogistics.in" method="POST">
 <input type="hidden" name="_cc" value="pnhlogisticspvt@gmail.com">
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://pnhlogistics.in/thankyou.html">
+<input type="hidden" name="_next" value="https://pnhlogistics.in/thank-you.html">
 
-<input required placeholder="Your Name">
-<input required type="email" placeholder="Email">
-<input required placeholder="Phone">
-<textarea required placeholder="Message"></textarea>
+<input name="name" required placeholder="Your Name">
+<input name="email" type="email" required placeholder="Email">
+<input name="phone" required placeholder="Phone">
+<textarea name="message" required placeholder="Message"></textarea>
 <button class="btn">Send Message</button>
 </form>
 
 <br>
-<iframe
-src="https://www.google.com/maps?q=SG%20Alpha%20Tower%201%20Sector%209%20Vasundhara%20Ghaziabad&output=embed"
-width="100%" height="350" style="border:0;" loading="lazy">
-</iframe>
+<iframe src="https://www.google.com/maps?q=SG%20Alpha%20Tower%201%20Sector%209%20Vasundhara%20Ghaziabad&output=embed"
+width="100%" height="350" style="border:0;" loading="lazy"></iframe>
 </section>
 
-<footer>
-© 2026 PNH Logistics Pvt Ltd. All Rights Reserved.
-</footer>
+<footer>© 2026 PNH Logistics Pvt Ltd. All Rights Reserved.</footer>
 
-<a class="whatsapp"
-href="https://wa.me/919266627816?text=Hello%20PNH%20Logistics,%20I%20need%20freight%20services."
-target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/919266627816" target="_blank">WhatsApp</a>
 
 <script>
-/* Slider */
 let slides=document.querySelectorAll('.slide-img'),i=0;
-setInterval(()=>{slides[i].classList.remove('active');
-i=(i+1)%slides.length;
-slides[i].classList.add('active');},4000);
+setInterval(()=>{slides[i].classList.remove('active');i=(i+1)%slides.length;slides[i].classList.add('active')},4000);
 
-/* Counters */
 document.querySelectorAll('.counter').forEach(c=>{
-let t=+c.dataset.target;
-let u=()=>{let n=+c.innerText;
-if(n<t){c.innerText=Math.ceil(n+t/200);setTimeout(u,20)}
-else c.innerText=t};
-u();
+let t=+c.dataset.target;let u=()=>{let n=+c.innerText;
+if(n<t){c.innerText=Math.ceil(n+t/200);setTimeout(u,20)}else c.innerText=t};u();
 });
 
-/* Reveal */
 const reveals=document.querySelectorAll('.reveal');
-window.addEventListener('scroll',()=>{
-reveals.forEach(r=>{
-if(r.getBoundingClientRect().top < window.innerHeight-100){
-r.classList.add('active');
-}
-});
-});
-
-/* Dark mode */
+window.addEventListener('scroll',()=>{reveals.forEach(r=>{if(r.getBoundingClientRect().top < innerHeight-100){r.classList.add('active')}})});
 function toggleDark(){document.body.classList.toggle('dark')}
 </script>
 
